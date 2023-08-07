@@ -13,7 +13,7 @@ export interface ICheckboxProps {
     disabled?: boolean,
     bgColor?: string,
     checkmarkColor?: string,
-    testId?: string,
+    testId: string,
     onChange: (newValue: boolean) => void
 }
 
@@ -83,8 +83,8 @@ function Checkbox(props: ICheckboxProps, ref: React.Ref<ICheckboxRef>): React.Re
 				{opacity: animatedInitialState}]}>
 			</Animated.View>
 			<Animated.View style={[
-				checkboxStyle.base,
-				checkboxStyle.checked,
+			    checkboxStyle.base,
+				props.bgColor == '' ? checkboxStyle.checked : {borderColor: props.bgColor, backgroundColor: props.bgColor},
 				{display: 'flex', alignItems: 'center', justifyContent: 'center'},
 				{opacity: animatedCheckedState}]}>
 				<Animated.View style={[

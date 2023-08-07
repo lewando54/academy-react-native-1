@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View, Pressable, Animated } from 'react-native'
 import React, { useState, useRef, forwardRef, useImperativeHandle } from 'react'
-import loginFormStyle from './LoginForm.style'
+import RegisterFormStyle from './RegisterForm.style'
 import Button from '../../atoms/Button/Button'
 import CheckboxWithLabel from '../../molecules/CheckboxWithLabel/CheckboxWithLabel'
 import Divider from '../../atoms/Divider/Divider'
@@ -11,40 +11,33 @@ import { ICheckboxRef } from '../../../components/atoms/Checkbox/Checkbox'
 import SocialButtonList, { TSocialsArray } from '../../molecules/SocialButtonList/SocialButtonList'
 import TextWithLink from '../../atoms/TextWithLink/TextWithLink'
 
-export interface ILoginFormRef{
+export interface IRegisterFormRef{
     focusLogin: () => void
-    clearCheckbox: () => void
 }
 
-export interface ILoginFormProps {
+export interface IRegisterFormProps {
     loginText: string
     passwordText: string
-    remember: boolean
     socials: TSocialsArray
     onLoginChange: (newValue: string) => void
     onPasswordChange: (newValue: string) => void
-    onRememberChange: (newValue: boolean) => void
     onSubmit: () => void
 }
 
-function LoginForm({loginText, passwordText, remember, socials, onLoginChange, onPasswordChange, onRememberChange, onSubmit}: ILoginFormProps, ref: React.Ref<ILoginFormRef>): React.ReactElement {
+function RegisterForm({loginText, passwordText, socials, onLoginChange, onPasswordChange, onSubmit}: IRegisterFormProps, ref: React.Ref<IRegisterFormRef>): React.ReactElement {
     const loginInputRef = useRef<ITextInputFieldRef>(null)
-    const checkboxRef = useRef<ICheckboxRef>(null)
     
     useImperativeHandle(ref, () => {
         return {
             focusLogin() {
                 loginInputRef.current?.focus()
-            },
-            clearCheckbox() {
-                checkboxRef.current?.clear()
             }
         }
     })
 
     return (
-        <View style={loginFormStyle.container}>
-            <Heading testId='heading' level={3}>Login</Heading>
+        <View style={RegisterFormStyle.container}>
+            <Heading testId='heading' level={3}>Sign up</Heading>
             <InputWithLabel 
                 labelText='Email' 
                 value={loginText} 
@@ -56,21 +49,14 @@ function LoginForm({loginText, passwordText, remember, socials, onLoginChange, o
                 value={passwordText} 
                 secureTextEntry={true} 
                 onChange={(newValue) => onPasswordChange(newValue)}/>
-            <CheckboxWithLabel 
-                labelText='Remember me?' 
-                testId='checkbox' 
-                checkmarkColor='white' 
-                checked={remember} 
-                ref={checkboxRef}
-                onChange={(newValue) => onRememberChange(newValue)}/>
             <Button testId='button' color={'primary'} onClick={onSubmit}>
-                Login
+                SIGN UP
             </Button>
             <Divider testId='divider' text={'OR'}/>
             <SocialButtonList socials={socials} testId='socialbtnlist' />
-            <TextWithLink paragraphText='Need an account?' anchorText='SIGN UP' href='/register' testId='textwithlink'/>
+            <TextWithLink paragraphText='Already registered?' anchorText='SIGN IN' href='/login' testId='textwithlink'/>
         </View>
     )
 }
 
-export default forwardRef(LoginForm)
+export default forwardRef(RegisterForm)

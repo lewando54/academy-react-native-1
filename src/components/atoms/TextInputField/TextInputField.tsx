@@ -24,7 +24,6 @@ function TextInputField({name, required, testId, placeholder, secureTextEntry=fa
         return {
             focus() {
                 TextInputRef.current?.focus()
-                console.log('focus called')
             }
         }
     })

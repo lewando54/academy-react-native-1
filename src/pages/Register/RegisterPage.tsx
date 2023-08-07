@@ -1,17 +1,16 @@
 import React, { useState, useRef } from 'react'
 
-import LoginTemplate from '../../components/templates/LoginTemplate/LoginTemplate'
-import { ILoginFormRef } from '../../components/organisms/LoginForm/LoginForm'
+import RegisterTemplate from '../../components/templates/RegisterTemplate/RegisterTemplate'
+import { IRegisterFormRef } from '../../components/organisms/RegisterForm/RegisterForm'
 
 import { TSocialsArray } from '../../components/molecules/SocialButtonList/SocialButtonList'
 
 
-function LoginPage(): React.ReactElement{
+function RegisterPage(): React.ReactElement{
 	const [loginText, setLoginText] = useState('')
 	const [passwordText, setPasswordText] = useState('')
-	const [remember, setRemember] = useState(false)
 
-	const loginRef = useRef<ILoginFormRef>(null)
+	const registerRef = useRef<IRegisterFormRef>(null)
 
 	const handleOnLoginChange = (login: string) => {
 		setLoginText(login)
@@ -21,20 +20,15 @@ function LoginPage(): React.ReactElement{
 		setPasswordText(password)
 	}
 
-	const handleOnRememberChange = (remember: boolean) => {
-		setRemember(remember)
-	}
-
 	const clearFormFields = () => {
 		setLoginText('')
 		setPasswordText('')
-		loginRef.current?.clearCheckbox()
 	}
 
 	const handleOnSubmit = () => {
-		console.log(`LOGIN: "${loginText}", "${passwordText}", ${remember}`)
+		console.log(`REGISTER: "${loginText}", "${passwordText}"`)
 		clearFormFields()
-		loginRef.current?.focusLogin()
+		registerRef.current?.focusLogin()
 	}
 
 	const socials: TSocialsArray = [
@@ -44,17 +38,15 @@ function LoginPage(): React.ReactElement{
 	]
 
 	return (
-		<LoginTemplate 
+		<RegisterTemplate 
 			socials={socials} 
 			loginText={loginText} 
-			passwordText={passwordText} 
-			remember={remember} 
+			passwordText={passwordText}  
 			onLoginChange={handleOnLoginChange}
 			onPasswordChange={handleOnPasswordChange}
-			onRememberChange={handleOnRememberChange}
 			onSubmit={handleOnSubmit}
-			ref={loginRef}/>
+			ref={registerRef}/>
 	)
 }
 
-export default LoginPage
+export default RegisterPage

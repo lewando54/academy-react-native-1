@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 export default ({ config }) => ({
 	...config,
-	name: 'Storybook Tutorial Template',
-	slug: 'storybook-tutorial-template',
+	name: 'Akademia React - Native',
+	slug: 'akademia-react-native',
 	extra: {
 		storybookEnabled: process.env.STORYBOOK_ENABLED,
 	},

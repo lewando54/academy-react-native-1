@@ -48,6 +48,8 @@ try {
 const getStories = () => {
   return {
     "./src/components/atoms/Button/Button.stories.tsx": require("../src/components/atoms/Button/Button.stories.tsx"),
+    "./src/components/atoms/Checkbox/Checkbox.stories.tsx": require("../src/components/atoms/Checkbox/Checkbox.stories.tsx"),
+    "./src/components/atoms/Divider/Divider.stories.tsx": require("../src/components/atoms/Divider/Divider.stories.tsx"),
   };
 };
 
