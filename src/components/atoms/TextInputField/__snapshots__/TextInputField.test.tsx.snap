@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInputField should render correctly 1`] = `
+<TextInput
+  onBlur={[Function]}
+  onChangeText={[Function]}
+  onFocus={[Function]}
+  secureTextEntry={false}
+  style={
+    [
+      {
+        "backgroundColor": "#fff",
+        "borderColor": "#e5e7eb",
+        "borderRadius": 6,
+        "borderWidth": 2,
+        "color": "black",
+        "fontSize": 18,
+        "lineHeight": 28,
+        "padding": 4,
+        "width": "100%",
+      },
+      false,
+    ]
+  }
+  value="test"
+/>
+`;

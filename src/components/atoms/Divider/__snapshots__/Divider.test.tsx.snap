@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Divider should not render text by default 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#e5e7eb",
+        "flex": 1,
+        "height": 2,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "backgroundColor": "#e5e7eb",
+        "flex": 1,
+        "height": 2,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Divider should render correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#e5e7eb",
+        "flex": 1,
+        "height": 2,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "backgroundColor": "#e5e7eb",
+        "flex": 1,
+        "height": 2,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`Divider should render with optional text 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#e5e7eb",
+        "flex": 1,
+        "height": 2,
+      }
+    }
+  />
+  <Text
+    style={
+      {
+        "borderColor": "#e5e7eb",
+        "borderRadius": 6,
+        "borderWidth": 2,
+        "color": "rgb(156 163 175)",
+        "fontSize": 14,
+        "lineHeight": 20,
+        "margin": 0,
+        "padding": 4,
+        "textAlign": "center",
+      }
+    }
+  >
+    Hello World!
+  </Text>
+  <View
+    style={
+      {
+        "backgroundColor": "#e5e7eb",
+        "flex": 1,
+        "height": 2,
+      }
+    }
+  />
+</View>
+`;

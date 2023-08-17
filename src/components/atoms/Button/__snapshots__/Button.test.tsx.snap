@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render correctly 1`] = `
+<View
+  collapsable={false}
+  style={
+    {
+      "transform": [
+        {
+          "scale": 1,
+        },
+      ],
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "border": 0,
+          "borderRadius": 6,
+          "paddingBottom": 8,
+          "paddingHorizontal": 4,
+          "paddingTop": 8,
+          "shadowBlur": 6,
+          "shadowColor": "rgba(0,0,0,0.3)",
+          "shadowOffset": {
+            "height": 4,
+            "width": 0,
+          },
+          "width": "100%",
+        },
+        {
+          "backgroundColor": "rgb(236, 72, 153)",
+        },
+      ]
+    }
+    testID="testxd"
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontSize": 14,
+          "letterSpacing": 0.4,
+          "lineHeight": 20,
+          "textAlign": "center",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Click me
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Button should render with primary color by default 1`] = `
+<View
+  collapsable={false}
+  style={
+    {
+      "transform": [
+        {
+          "scale": 1,
+        },
+      ],
+      "width": "100%",
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      [
+        {
+          "border": 0,
+          "borderRadius": 6,
+          "paddingBottom": 8,
+          "paddingHorizontal": 4,
+          "paddingTop": 8,
+          "shadowBlur": 6,
+          "shadowColor": "rgba(0,0,0,0.3)",
+          "shadowOffset": {
+            "height": 4,
+            "width": 0,
+          },
+          "width": "100%",
+        },
+        {
+          "backgroundColor": "rgb(236, 72, 153)",
+        },
+      ]
+    }
+    testID="testxd"
+  >
+    <Text
+      style={
+        {
+          "color": "white",
+          "fontSize": 14,
+          "letterSpacing": 0.4,
+          "lineHeight": 20,
+          "textAlign": "center",
+          "textTransform": "uppercase",
+        }
+      }
+    >
+      Click me
+    </Text>
+  </View>
+</View>
+`;

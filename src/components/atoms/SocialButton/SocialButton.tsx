@@ -4,7 +4,7 @@ import socialButtonStyle from './SocialButton.style'
 export type TiconProp = 'facebook' | 'google' | 'linkedin'
 import { Linking, Pressable, Animated } from 'react-native'
 
-interface socialButtonProps {
+export interface ISocialButtonProps {
     color: string
     href: string
     icon: TiconProp
@@ -12,7 +12,7 @@ interface socialButtonProps {
     size: number
 }
 
-function SocialButton ({ color, href, icon, testId, size }: socialButtonProps): React.ReactElement {
+function SocialButton ({ color, href, icon, testId, size }: ISocialButtonProps): React.ReactElement {
     const iconSize = size * 0.75
     const circleSize = size * 1.75
 
@@ -45,11 +45,12 @@ function SocialButton ({ color, href, icon, testId, size }: socialButtonProps): 
       };
 
     return (
-        <Animated.View style={{transform: [{scale: animatedButtonScale}]}}>
+        <Animated.View style={{transform: [{scale: animatedButtonScale}]}} testID={testId}>
           <Pressable onPress={handlePress} 
           style={[socialButtonStyle.base, {borderColor: color, width: circleSize, height: circleSize, borderRadius: circleSize}]}
           onPressIn={onPressIn}
-          onPressOut={onPressOut}>
+          onPressOut={onPressOut}
+          testID='pressable-social-button'>
             {icons[icon]}
           </Pressable>
         </Animated.View>

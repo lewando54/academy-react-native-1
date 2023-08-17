@@ -19,12 +19,13 @@ export interface IRegisterFormProps {
     loginText: string
     passwordText: string
     socials: TSocialsArray
+    testId?: string
     onLoginChange: (newValue: string) => void
     onPasswordChange: (newValue: string) => void
     onSubmit: () => void
 }
 
-function RegisterForm({loginText, passwordText, socials, onLoginChange, onPasswordChange, onSubmit}: IRegisterFormProps, ref: React.Ref<IRegisterFormRef>): React.ReactElement {
+function RegisterForm({loginText, passwordText, socials, onLoginChange, testId, onPasswordChange, onSubmit}: IRegisterFormProps, ref: React.Ref<IRegisterFormRef>): React.ReactElement {
     const loginInputRef = useRef<ITextInputFieldRef>(null)
     
     useImperativeHandle(ref, () => {
@@ -36,7 +37,7 @@ function RegisterForm({loginText, passwordText, socials, onLoginChange, onPasswo
     })
 
     return (
-        <View style={RegisterFormStyle.container}>
+        <View style={RegisterFormStyle.container} testID={testId}>
             <Heading testId='heading' level={3}>Sign up</Heading>
             <InputWithLabel 
                 labelText='Email' 
@@ -48,6 +49,7 @@ function RegisterForm({loginText, passwordText, socials, onLoginChange, onPasswo
                 labelText='Password' 
                 value={passwordText} 
                 secureTextEntry={true} 
+                testId='passwordinput'
                 onChange={(newValue) => onPasswordChange(newValue)}/>
             <Button testId='button' color={'primary'} onClick={onSubmit}>
                 SIGN UP

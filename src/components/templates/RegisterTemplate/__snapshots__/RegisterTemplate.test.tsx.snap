@@ -1,0 +1,492 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm Template should render correctly 1`] = `
+<View
+  style={
+    [
+      {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "display": "flex",
+        "height": "100%",
+        "justifyContent": "center",
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "#a53fea",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "white",
+        "borderRadius": 8,
+        "display": "flex",
+        "flexDirection": "column",
+        "gap": 20,
+        "justifyContent": "flex-start",
+        "padding": "10%",
+        "shadowColor": "rgba(0,0,0,0.6)",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowRadius": 8,
+        "width": 320,
+      }
+    }
+    testID="login-testid"
+  >
+    <Text
+      style={
+        [
+          {
+            "fontWeight": "700",
+            "margin": 0,
+            "textAlign": "left",
+            "textTransform": "uppercase",
+            "width": "100%",
+          },
+          {
+            "fontSize": 16.666666666666664,
+          },
+        ]
+      }
+      testID="heading"
+    >
+      Sign up
+    </Text>
+    <View
+      style={
+        {
+          "display": "flex",
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 16,
+          }
+        }
+      >
+        Email
+      </Text>
+      <TextInput
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        secureTextEntry={false}
+        style={
+          [
+            {
+              "backgroundColor": "#fff",
+              "borderColor": "#e5e7eb",
+              "borderRadius": 6,
+              "borderWidth": 2,
+              "color": "black",
+              "fontSize": 18,
+              "lineHeight": 28,
+              "padding": 4,
+              "width": "100%",
+            },
+            false,
+          ]
+        }
+        testID="logininput"
+        value=""
+      />
+    </View>
+    <View
+      style={
+        {
+          "display": "flex",
+          "width": "100%",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "fontSize": 16,
+          }
+        }
+      >
+        Password
+      </Text>
+      <TextInput
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        secureTextEntry={true}
+        style={
+          [
+            {
+              "backgroundColor": "#fff",
+              "borderColor": "#e5e7eb",
+              "borderRadius": 6,
+              "borderWidth": 2,
+              "color": "black",
+              "fontSize": 18,
+              "lineHeight": 28,
+              "padding": 4,
+              "width": "100%",
+            },
+            false,
+          ]
+        }
+        testID="passwordinput"
+        value=""
+      />
+    </View>
+    <View
+      collapsable={false}
+      style={
+        {
+          "transform": [
+            {
+              "scale": 1,
+            },
+          ],
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          [
+            {
+              "border": 0,
+              "borderRadius": 6,
+              "paddingBottom": 8,
+              "paddingHorizontal": 4,
+              "paddingTop": 8,
+              "shadowBlur": 6,
+              "shadowColor": "rgba(0,0,0,0.3)",
+              "shadowOffset": {
+                "height": 4,
+                "width": 0,
+              },
+              "width": "100%",
+            },
+            {
+              "backgroundColor": "rgb(236, 72, 153)",
+            },
+          ]
+        }
+        testID="button"
+      >
+        <Text
+          style={
+            {
+              "color": "white",
+              "fontSize": 14,
+              "letterSpacing": 0.4,
+              "lineHeight": 20,
+              "textAlign": "center",
+              "textTransform": "uppercase",
+            }
+          }
+        >
+          SIGN UP
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "#e5e7eb",
+            "flex": 1,
+            "height": 2,
+          }
+        }
+      />
+      <Text
+        style={
+          {
+            "borderColor": "#e5e7eb",
+            "borderRadius": 6,
+            "borderWidth": 2,
+            "color": "rgb(156 163 175)",
+            "fontSize": 14,
+            "lineHeight": 20,
+            "margin": 0,
+            "padding": 4,
+            "textAlign": "center",
+          }
+        }
+      >
+        OR
+      </Text>
+      <View
+        style={
+          {
+            "backgroundColor": "#e5e7eb",
+            "flex": 1,
+            "height": 2,
+          }
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "display": "flex",
+          "flexDirection": "row",
+          "gap": 16,
+          "justifyContent": "center",
+          "width": "100%",
+        }
+      }
+      testID="socialbtnlist"
+    >
+      <View
+        collapsable={false}
+        style={
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+        testID="socialbtnlist1"
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "alignItems": "center",
+                "borderWidth": 2,
+                "display": "flex",
+                "justifyContent": "center",
+                "padding": 8,
+              },
+              {
+                "borderColor": "blue",
+                "borderRadius": 42,
+                "height": 42,
+                "width": 42,
+              },
+            ]
+          }
+          testID="pressable-social-button"
+        >
+          <Text />
+        </View>
+      </View>
+      <View
+        collapsable={false}
+        style={
+          {
+            "transform": [
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+        testID="socialbtnlist2"
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            [
+              {
+                "alignItems": "center",
+                "borderWidth": 2,
+                "display": "flex",
+                "justifyContent": "center",
+                "padding": 8,
+              },
+              {
+                "borderColor": "red",
+                "borderRadius": 42,
+                "height": 42,
+                "width": 42,
+              },
+            ]
+          }
+          testID="pressable-social-button"
+        >
+          <Text />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "gap": 4,
+          "justifyContent": "center",
+          "lineHeight": 20,
+        }
+      }
+      testID="textwithlink"
+    >
+      <Text
+        style={
+          {
+            "color": "rgb(107 114 128)",
+            "fontSize": 14,
+          }
+        }
+      >
+        Already registered?
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "rgb(107 114 128)",
+                "fontSize": 14,
+              },
+              {
+                "color": "rgb(107 114 128)",
+                "fontSize": 14,
+                "textDecorationLine": "underline",
+              },
+            ]
+          }
+        >
+          SIGN IN
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

@@ -61,13 +61,15 @@ function Checkbox(props: ICheckboxProps, ref: React.Ref<ICheckboxRef>): React.Re
 	})
 
 	const handleChange = () => {
-        if(props.checked){
-            animateCheckboxUncheck()
-        }
-        else{
-            animateCheckboxCheck()
-        }
-		props.onChange(!props.checked)
+		if(!props.disabled){
+			if(props.checked){
+				animateCheckboxUncheck()
+			}
+			else{
+				animateCheckboxCheck()
+			}
+			props.onChange(!props.checked)
+		}
 	}
 
 	return (
@@ -77,14 +79,15 @@ function Checkbox(props: ICheckboxProps, ref: React.Ref<ICheckboxRef>): React.Re
 				{width: 25, height: 25, position: 'relative'},
 				props.disabled && checkboxStyle.disabled,
 			]}
+			accessibilityState={{checked: props.checked}}
 			onPress={handleChange}>
 			<Animated.View style={[
 				checkboxStyle.base,
 				{opacity: animatedInitialState}]}>
 			</Animated.View>
-			<Animated.View style={[
+			<Animated.View testID={'checkbox-view'} style={[
 			    checkboxStyle.base,
-				props.bgColor == '' ? checkboxStyle.checked : {borderColor: props.bgColor, backgroundColor: props.bgColor},
+				(props.bgColor == '' || props.bgColor == undefined) ? checkboxStyle.checked : {borderColor: props.bgColor, backgroundColor: props.bgColor},
 				{display: 'flex', alignItems: 'center', justifyContent: 'center'},
 				{opacity: animatedCheckedState}]}>
 				<Animated.View style={[

@@ -21,13 +21,14 @@ export interface ILoginFormProps {
     passwordText: string
     remember: boolean
     socials: TSocialsArray
+    testId?: string
     onLoginChange: (newValue: string) => void
     onPasswordChange: (newValue: string) => void
     onRememberChange: (newValue: boolean) => void
     onSubmit: () => void
 }
 
-function LoginForm({loginText, passwordText, remember, socials, onLoginChange, onPasswordChange, onRememberChange, onSubmit}: ILoginFormProps, ref: React.Ref<ILoginFormRef>): React.ReactElement {
+function LoginForm({loginText, passwordText, remember, socials, onLoginChange, onPasswordChange, onRememberChange, onSubmit}: ILoginFormProps, ref: React.RefObject<ILoginFormRef>): React.ReactElement {
     const loginInputRef = useRef<ITextInputFieldRef>(null)
     const checkboxRef = useRef<ICheckboxRef>(null)
     
@@ -55,6 +56,7 @@ function LoginForm({loginText, passwordText, remember, socials, onLoginChange, o
                 labelText='Password' 
                 value={passwordText} 
                 secureTextEntry={true} 
+                testId='passwordinput'
                 onChange={(newValue) => onPasswordChange(newValue)}/>
             <CheckboxWithLabel 
                 labelText='Remember me?' 

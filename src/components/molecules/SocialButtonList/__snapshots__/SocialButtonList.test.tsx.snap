@@ -1,0 +1,212 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialButtonList should render correctly 1`] = `
+<View
+  style={
+    {
+      "display": "flex",
+      "flexDirection": "row",
+      "gap": 16,
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+  testID="test"
+>
+  <View
+    collapsable={false}
+    style={
+      {
+        "transform": [
+          {
+            "scale": 1,
+          },
+        ],
+      }
+    }
+    testID="test0"
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "display": "flex",
+            "justifyContent": "center",
+            "padding": 8,
+          },
+          {
+            "borderColor": "#e90800",
+            "borderRadius": 42,
+            "height": 42,
+            "width": 42,
+          },
+        ]
+      }
+      testID="pressable-social-button"
+    >
+      <Text />
+    </View>
+  </View>
+  <View
+    collapsable={false}
+    style={
+      {
+        "transform": [
+          {
+            "scale": 1,
+          },
+        ],
+      }
+    }
+    testID="test1"
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "display": "flex",
+            "justifyContent": "center",
+            "padding": 8,
+          },
+          {
+            "borderColor": "#4768aa",
+            "borderRadius": 42,
+            "height": 42,
+            "width": 42,
+          },
+        ]
+      }
+      testID="pressable-social-button"
+    >
+      <Text />
+    </View>
+  </View>
+  <View
+    collapsable={false}
+    style={
+      {
+        "transform": [
+          {
+            "scale": 1,
+          },
+        ],
+      }
+    }
+    testID="test2"
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        [
+          {
+            "alignItems": "center",
+            "borderWidth": 2,
+            "display": "flex",
+            "justifyContent": "center",
+            "padding": 8,
+          },
+          {
+            "borderColor": "#0068c1",
+            "borderRadius": 42,
+            "height": 42,
+            "width": 42,
+          },
+        ]
+      }
+      testID="pressable-social-button"
+    >
+      <Text />
+    </View>
+  </View>
+</View>
+`;

@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text With Link should render correctly 1`] = `
+<View
+  style={
+    {
+      "alignItems": "center",
+      "display": "flex",
+      "flexDirection": "row",
+      "gap": 4,
+      "justifyContent": "center",
+      "lineHeight": 20,
+    }
+  }
+  testID="test"
+>
+  <Text
+    style={
+      {
+        "color": "rgb(107 114 128)",
+        "fontSize": 14,
+      }
+    }
+  >
+    test
+  </Text>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "rgb(107 114 128)",
+            "fontSize": 14,
+          },
+          {
+            "color": "rgb(107 114 128)",
+            "fontSize": 14,
+            "textDecorationLine": "underline",
+          },
+        ]
+      }
+    >
+      click me
+    </Text>
+  </View>
+</View>
+`;
